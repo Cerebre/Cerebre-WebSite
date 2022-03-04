@@ -20,10 +20,10 @@
 body {
   position: relative;
   overflow-y: scroll;
-  position: relative;
 }
 
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
 }
@@ -50,8 +50,8 @@ html {
   left: 0;
   right: 0;
   z-index: 1200;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
 }
 
 .nav.scroll {
@@ -106,8 +106,8 @@ html {
           justify-content: center;
   position: relative;
   cursor: pointer;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .nav .navContainer .navbar:hover {
@@ -155,8 +155,8 @@ html {
   margin: 2px 0;
   border-radius: 10px;
   cursor: pointer;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .navDisplay {
@@ -258,7 +258,7 @@ html {
   overflow: hidden;
   font-weight: bolder;
   width: 80%;
-  margin: .7rem 0;
+  margin: 0.7rem 0;
   position: relative;
 }
 
@@ -276,8 +276,8 @@ html {
   width: 25%;
   height: 1px;
   background: #fff;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .navDisplay .container .navContent .navDescription .navbarLink:hover::before {
@@ -293,7 +293,7 @@ html {
   overflow: hidden;
   font-size: 1.3rem;
   width: 80%;
-  margin: .7rem 0;
+  margin: 0.7rem 0;
 }
 
 @media screen and (max-width: 991px) {
@@ -310,7 +310,7 @@ html {
   left: 0;
   min-height: 100vh;
   width: 100%;
-  z-index: 10000;
+  z-index: 5100000;
   overflow: hidden;
   pointer-events: none;
 }
@@ -1080,5 +1080,107 @@ html {
 .contactContainer .contactCard .contactDetails div .map a::before {
   display: none;
   position: initial;
+}
+
+.reviewBox {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 500000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.reviewBox .container {
+  width: 80%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .reviewBox .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .reviewBox .container {
+    width: 100%;
+  }
+}
+
+.reviewBox .container img {
+  width: 50%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .reviewBox .container img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .reviewBox .container img {
+    width: 95%;
+  }
+}
+
+.openReviewBox {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 5000011;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .openReviewBox {
+    bottom: 10%;
+    right: 10%;
+  }
+}
+
+.openReviewBox .reviewtext {
+  margin-top: 0.5rem;
+}
+
+.openReviewBox .eye-opened {
+  opacity: 0;
+  -webkit-transform: translateY(200%);
+          transform: translateY(200%);
 }
 /*# sourceMappingURL=cerebre.css.map */
