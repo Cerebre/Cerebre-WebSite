@@ -1,0 +1,49 @@
+.privacyContainer{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        align-items: center;
+        justify-content: center;
+
+        .container{
+            width: 55%;
+            padding: 3rem 5rem;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                padding: 2rem;
+            }
+
+            div{
+                margin-bottom: 2rem;
+            }
+
+            h1{
+                color: #aa4820;
+            }
+
+            h2{
+                font-size: 1.6rem;
+                margin-bottom: .5rem;
+                color: #e77d2d;
+            }
+            p {
+                font-size: 1em;
+                line-height: 1.8;
+            }
+
+            ul{
+                // list-style: none;
+                font-size: 1em;
+                line-height: 1.8;
+            }
+
+            a{
+                text-decoration: none;
+                color: #254c05;
+                font-weight: 800;
+            }
+        }
+}

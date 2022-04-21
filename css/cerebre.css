@@ -45,7 +45,8 @@ html {
 .nav {
   width: 100%;
   height: 10vh;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -1295,5 +1296,63 @@ html {
   opacity: 0;
   -webkit-transform: translateY(200%);
           transform: translateY(200%);
+}
+
+.privacyContainer {
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.privacyContainer .container {
+  width: 55%;
+  padding: 3rem 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .privacyContainer .container {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+.privacyContainer .container div {
+  margin-bottom: 2rem;
+}
+
+.privacyContainer .container h1 {
+  color: #aa4820;
+}
+
+.privacyContainer .container h2 {
+  font-size: 1.6rem;
+  margin-bottom: .5rem;
+  color: #e77d2d;
+}
+
+.privacyContainer .container p {
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+.privacyContainer .container ul {
+  font-size: 1em;
+  line-height: 1.8;
+}
+
+.privacyContainer .container a {
+  text-decoration: none;
+  color: #254c05;
+  font-weight: 800;
 }
 /*# sourceMappingURL=cerebre.css.map */
